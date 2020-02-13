@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4ab5938c-e4f7-4d14-985a-d10d09ef4b59" name="Default Changelist" comment="" />
+    <list default="true" id="4ab5938c-e4f7-4d14-985a-d10d09ef4b59" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,7 +23,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Enzilum" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -33,6 +36,7 @@
       <option name="presentableId" value="Default" />
       <updated>1581348798473</updated>
       <workItem from="1581348800144" duration="26000" />
+      <workItem from="1581450600547" duration="103000" />
     </task>
     <servers />
   </component>
@@ -40,6 +44,14 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="808" y="410" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1581450650598">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="808" y="410" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1581450650598" />
+    <state x="740" y="276" key="FileChooserDialogImpl" timestamp="1581450701458">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="276" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1581450701458" />
     <state x="342" y="216" key="new project wizard" timestamp="1581348824062">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

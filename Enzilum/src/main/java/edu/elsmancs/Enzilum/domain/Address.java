@@ -3,21 +3,15 @@ package edu.elsmancs.Enzilum.domain;
 
 import java.security.PrivateKey;
 import java.security.PublicKey;
+import java.security.KeyPair;
 
 public class Address {
 
     private PublicKey PK;
     private PrivateKey SK;
-    private double balance = 0;
+    private int balance = 0;
     private String symbol = "EZI";
 
-
-    public Address(){ // La instancia está en App.java
-        Address user =  new Address();
-
-        this.PK = null;
-        this.SK = null;
-    }
 
     public void setPK(PublicKey PK) { //SETTER
         this.PK = PK;
@@ -35,14 +29,24 @@ public class Address {
         return this.SK;
     }
 
-    public double getBalance() {  //GETTER BALANCE
+    public int getBalance() {  //GETTER BALANCE
         return this.balance;
     }
 
-    public String toString() {
-        return "Address de " + this.getPK() +
-                "Y el balance de dicho usuario es: " + this.getBalance();
+    public void generateKeyPair() {
+        KeyPair pair = GenSig.generateKeyPair();
+        this.setSK(pair.getPrivate());
+        this.setPK(pair.getPublic());
     }
 
 
+
+
+    @Override
+
+    public String toString() {
+        return "\n" + "PK = " + getPK().hashCode() + "\n" +
+                "Balance = " + getBalance() + " " +
+                this.symbol + "\n";
+    }
 }
