@@ -9,7 +9,7 @@ public class Address {
 
     private PublicKey PK;
     private PrivateKey SK;
-    private int balance = 0;
+    private double balance = 0;
     private String symbol = "EZI";
 
 
@@ -29,7 +29,7 @@ public class Address {
         return this.SK;
     }
 
-    public int getBalance() {  //GETTER BALANCE
+    public double getBalance() {  //GETTER BALANCE
         return this.balance;
     }
 
@@ -39,14 +39,26 @@ public class Address {
         this.setPK(pair.getPublic());
     }
 
-
-
+    boolean isSKpresent() { //Nivel paquete
+        return this.getPK() != null ? true : false;
+        /* Elvis operator
+        * Si getPK es != null devuelve true, sino false
+        * Es una forma de ahorrrte un condicional
+         */
+    }
 
     @Override
-
     public String toString() {
         return "\n" + "PK = " + getPK().hashCode() + "\n" +
                 "Balance = " + getBalance() + " " +
                 this.symbol + "\n";
     }
+
+    void transferEZI(double enziniums) {
+        this.balance += enziniums;
+    }  /* Meter dentro de balance(cartera)
+        * enziniums
+        */
+
+
 }
