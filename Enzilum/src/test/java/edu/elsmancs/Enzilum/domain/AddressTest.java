@@ -26,10 +26,12 @@ public class AddressTest {
     }
 
     @Test
-    public void comprobarInserccionEnziniumsTest() {
-        Address address = new Address();
-        double enziniums = 0d;
-        address.transferEZI(enziniums);
-        //assertNotNull(address.transferEZI(enziniums));
+    public void TransferirEziTest() {
+        Address rick = new Address();
+        rick.generateKeyPair();
+        rick.transferEZI(40d);
+        rick.transferEZI(25d);
+
+        assertEquals(65, rick.getBalance(), 0d);
     }
 }
