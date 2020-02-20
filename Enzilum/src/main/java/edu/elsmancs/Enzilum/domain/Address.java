@@ -10,7 +10,7 @@ public class Address {
     private PublicKey PK;
     private PrivateKey SK;
     private double balance = 0;
-    private String symbol = "EZI";
+    private final String symbol = "EZI";
 
 
     public void setPK(PublicKey PK) { //SETTER
@@ -39,11 +39,12 @@ public class Address {
         this.setPK(pair.getPublic());
     }
 
-    boolean isSKpresent() { //Nivel paquete
+    boolean isSKpresent() {
+        //Nivel paquete
         return this.getPK() != null ? true : false;
         /* Elvis operator
         * Si getPK es != null devuelve true, sino false
-        * Es una forma de ahorrrte un condicional
+        * Es una forma de ahorrte un condicional
          */
     }
 
@@ -54,11 +55,17 @@ public class Address {
                 this.symbol + "\n";
     }
 
-    void transferEZI(double enziniums) {
+    public void transferEZI(double enziniums) {
+        //Nivel de paquete
         this.balance += enziniums;
     }  /* Meter dentro de balance(cartera)
         * enziniums
         */
 
-
+    public void send(TokenContract contract, Double enziniums) {
+        if (enziniums <= this.balance) {
+            contract.payable(getPK(), enziniums);
+            this.balance -= enziniums;
+        }
+    }
 }
