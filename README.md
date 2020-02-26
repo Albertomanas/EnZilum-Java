@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # EnZinlum
 
 ###  Autor: Alberto Jesús Mañas González
@@ -11,6 +11,4 @@ En dicho kata, iniciamos con el uso de mapas y recorrerlos. está hecho en base 
 de David Gelpi proporcionado en su repo. 
 
 Uso del libro JavaNotesForProfessionals.
-=======
-# EnZilum-Java
->>>>>>> origin/master
+
