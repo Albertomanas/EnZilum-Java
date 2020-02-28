@@ -6,7 +6,7 @@
 *.log
 
 #Maven
-Bici_palma/target/
+*/target/
 
 # IntelIj files
 Enzilum/.idea
